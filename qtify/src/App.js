@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import { fetchTopAlbums } from "./api/api";
 import Section from "./components/Section/Section";
-import NewAlbum from "./components/Section/NewAlbum";
 
 const App = () => {
   const [topAlbums, setTopAlbums] = useState([]);
