@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import { fetchTopAlbums } from "./api/api";
+import { fetchTopAlbums, fetchNewAlbums } from "./api/api";
 import Section from "./components/Section/Section";
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
 
   const getNewAlbums = async () => {
     try {
-      const data = await fetchTopAlbums();
+      const data = await fetchNewAlbums();
       console.log(data);
       setNewAlbums(data);
     } catch (err) {
