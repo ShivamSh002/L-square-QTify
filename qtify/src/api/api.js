@@ -21,3 +21,13 @@ export const fetchNewAlbums = async () => {
     console.error(err);
   }
 };
+
+export const fetchSongs = async () => {
+  try {
+    const res = await axios.get(`${Backend_Endpoint}/songs`);
+    console.log(res);
+    return res.data;
+  } catch (err) {
+    console.error(err);
+  }
+};
