@@ -2,8 +2,6 @@
     display: flex;
     gap: 2.5rem;
     flex-wrap: wrap;
-    margin-inline: 2rem;
-    margin-top: 1.2rem;
     justify-content: space-around;
 }
 
@@ -11,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-inline: 2rem;
+    margin: 1rem;
 }
 
 .toggleText {
@@ -20,5 +18,5 @@
 }
 
 .cardsWrppaer {
-    margin: 18px;
+    margin-top: 1.125rem;
 }
